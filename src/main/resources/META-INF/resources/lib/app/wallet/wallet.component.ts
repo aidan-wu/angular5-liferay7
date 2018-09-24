@@ -1,9 +1,9 @@
 ﻿import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { NgForm } from '@angular/forms';
 
 @Component({
-    selector: 'wallet',
+    moduleId: module.id,
+    selector: 'account',
     templateUrl: '/o/angular-npm-portlet/lib/app/wallet/wallet.component.html',
     styleUrls: ['/o/angular-npm-portlet/lib/app/wallet/wallet.component.css']
 })
@@ -14,10 +14,6 @@ export class WalletComponent {
 
     constructor(
         private router: Router){}
-
-    submit(theForm: NgForm) {
-        alert(`Hello ${theForm.value.name}!`);
-    }
 
 
     register() {

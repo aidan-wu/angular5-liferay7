@@ -3,7 +3,7 @@ import { AccountComponent } from './account/index';
 import {WalletComponent} from "./wallet/index";
 
 const appRoutes: Routes = [
-    { path: 'home', component: AccountComponent },
+    { path: '', component: AccountComponent },
     { path: 'account', component: AccountComponent },
     { path: 'wallet', component: WalletComponent }
 ];

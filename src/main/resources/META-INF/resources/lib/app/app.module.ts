@@ -7,11 +7,10 @@ import { routing }        from './app.routing';
 import { AccountComponent } from './account/index';
 import {APP_BASE_HREF} from '@angular/common';
 import {WalletComponent} from "./wallet/index";
-//import { MatInputModule } from '@angular/material/input';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
-	imports: [BrowserAnimationsModule, BrowserModule, FormsModule,  routing], //  MatInputModule],
+	imports: [BrowserModule, FormsModule,  routing],
 	declarations: [AppComponent,  AccountComponent, WalletComponent],
 	entryComponents: [AppComponent],
 	bootstrap: [], // Don't bootstrap any component statically (see ngDoBootstrap() below)
